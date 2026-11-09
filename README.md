@@ -72,6 +72,8 @@
 
 | | |
 |:---|:---|
+| **Instalador novo** | Abriu, já instala: uma barra e o Noir abre sozinho. |
+| **Câmera em bolinha** | Tela e câmera da mesma pessoa num cartaz só. |
 | **Mais resistente** | Testado na marra (sala lotada, imagens gigantes, mensagens quebradas) e não caiu. |
 | **Ajustes** | Os nomes das abas voltaram a aparecer; ícones só no traço. |
 | **Holofote** | Cor do fundo mais leve. |
