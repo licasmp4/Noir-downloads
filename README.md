@@ -72,12 +72,15 @@
 
 | | |
 |:---|:---|
+| **Mais resistente** | Testado na marra (sala lotada, imagens gigantes, mensagens quebradas) e não caiu. |
+| **Ajustes** | Os nomes das abas voltaram a aparecer; ícones só no traço. |
+| **Holofote** | Cor do fundo mais leve. |
 | **Ícone de verdade** | Cada janela aparece com o ícone do próprio app. |
 | **Tela não encontrada** | Acabou o erro em PCs com mais de um monitor. |
 | **Pode sair de perto** | Transmitindo, o computador não dorme e a tela não apaga. |
 | **Mais fácil de ler** | Textos com mais contraste e nada de "ao vivo" antes da hora. |
 | **Sala vazia** | Um botão grande pra copiar o código e chamar os amigos. |
-| **Ajustes** | Aba Geral, idioma Português ou English, perfil abrindo suave. |
+| **Aba Geral** | Idioma Português ou English, perfil abrindo suave. |
 | **Animações** | Mais calmas, e a opção Menos movimento. |
 
 </div>
