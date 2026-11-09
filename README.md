@@ -72,6 +72,7 @@
 
 | | |
 |:---|:---|
+| **Duas abas** | Sua transmissão separada de assistir os amigos. |
 | **Layouts** | Só a tela, bolinha, lado a lado, você em destaque ou só a câmera. |
 | **Você grande** | Sua câmera e sua tela em tela cheia ou numa janelinha. |
 | **Instalador novo** | Abriu, já instala: uma barra e o Noir abre sozinho. |
