@@ -72,6 +72,8 @@
 
 | | |
 |:---|:---|
+| **Layouts** | Só a tela, bolinha, lado a lado, você em destaque ou só a câmera. |
+| **Você grande** | Sua câmera e sua tela em tela cheia ou numa janelinha. |
 | **Instalador novo** | Abriu, já instala: uma barra e o Noir abre sozinho. |
 | **Câmera em bolinha** | Tela e câmera da mesma pessoa num cartaz só. |
 | **Mais resistente** | Testado na marra (sala lotada, imagens gigantes, mensagens quebradas) e não caiu. |
