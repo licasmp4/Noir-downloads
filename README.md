@@ -115,6 +115,6 @@
 
 <br>
 
-<p align="center">Criado por <a href="https://github.com/licasmp4"><b>licas.mp3</b></a> e <a href="https://github.com/brenoalq"><b>brenoalq</b></a></p>
+<p align="center">Criado por <a href="https://github.com/licasmp4"><b>licas.mp3</b></a></p>
 
 <p align="center"><sub>Este repositório guarda só os instaladores. Apple, macOS e Windows são marcas de seus donos; o Noir não tem ligação com eles.</sub></p>
