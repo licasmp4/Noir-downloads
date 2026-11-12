@@ -74,7 +74,7 @@
 |:---|:---|
 | **Sala privada** | Quem chega bate na porta, e você deixa entrar ou recusa. |
 | **Código fixo** | Sua sala volta sempre com o mesmo código. |
-| **Sua música pra quem assiste** | Opcional, em Ajustes › Ilha: quem te assiste vê o que você ouve e abre no Spotify. |
+| **Sua música pra quem assiste** | Opcional, em Ajustes › Ilha: quem te assiste vê o que você ouve, com a sua foto no canto da capa, e abre no Spotify. |
 | **Telas mais calmas** | Transmitir, Assistir, a sala, sua transmissão e os Ajustes com menos botões à vista. |
 | **Início contido** | Duas portas, o código numa linha e os amigos em lista. |
 | **Chat na ilha** | As mensagens aparecem na ilha do topo; o painel do chat começa fechado. |
