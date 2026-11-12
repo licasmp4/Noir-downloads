@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img src="docs/gif/inicio.gif" width="100%" alt="O início do Noir: saudação com o seu nome, a escolha da tela ou de uma janela com o ícone de cada app, e o botão Começar.">
+  <img src="docs/gif/inicio.gif" width="100%" alt="O início do Noir: Boa tarde, duas portas (Transmitir e Assistir), o campo do código e os amigos.">
 </p>
 
 <br>
@@ -32,10 +32,10 @@
 
 <h2 align="center">A tela inteira ou só o jogo.</h2>
 
-<p align="center">Cada janela aberta aparece com o ícone de verdade do app. Escolheu o CS2? Só ele vai pros amigos.</p>
+<p align="center">Um jogo, a tela inteira ou uma janela. Escolheu o jogo? Só ele vai pros amigos.</p>
 
 <p align="center">
-  <img src="docs/janelas.jpg" width="100%" alt="A tela inicial do Noir: duas telas para escolher e, embaixo, as janelas abertas com o ícone de cada app: Counter-Strike 2, Visual Studio Code, WhatsApp e Spotify.">
+  <img src="docs/janelas.jpg" width="100%" alt="Transmitir no Noir: O que você vai mostrar? Um jogo, a tela inteira ou uma janela, a prévia e o botão vermelho Começar a transmitir.">
 </p>
 
 <br>
@@ -43,10 +43,10 @@
 <h2 align="center">A sala dos amigos.</h2>
 
 <p align="center">
-  <img src="docs/gif/sala.gif" width="100%" alt="Assistindo a tela de um amigo, com o chat da sala no canto.">
+  <img src="docs/gif/sala.gif" width="100%" alt="A sala com três amigos ao vivo: clique no cartaz pra assistir.">
 </p>
 
-<p align="center"><sub>A tela e a câmera de cada um, o chat do lado e janelinhas que flutuam por cima do jogo.</sub></p>
+<p align="center"><sub>A tela e a câmera de cada um, o chat na ilha e janelinhas que flutuam por cima do jogo. A sala pode ser privada: quem chega bate na porta.</sub></p>
 
 <br>
 
@@ -54,7 +54,7 @@
   <img src="docs/gif/ilha.gif" width="100%" alt="A ilha do topo mostrando a música que está tocando e os avisos da sala.">
 </p>
 
-<p align="center"><sub>A ilha do topo mostra a música que está tocando e os avisos da sala.</sub></p>
+<p align="center"><sub>A ilha do topo mostra a música que está tocando e os avisos da sala. Se você quiser, quem te assiste vê o que você está ouvindo.</sub></p>
 
 <br>
 
@@ -66,27 +66,19 @@
 
 <h2 align="center">O que mudou</h2>
 
-<p align="center"><b>9 de novembro de 2026</b></p>
+<p align="center"><b>12 de novembro de 2026</b></p>
 
 <div align="center">
 
 | | |
 |:---|:---|
-| **Duas abas** | Sua transmissão separada de assistir os amigos. |
-| **Layouts** | Só a tela, bolinha, lado a lado, você em destaque ou só a câmera. |
-| **Você grande** | Sua câmera e sua tela em tela cheia ou numa janelinha. |
-| **Instalador novo** | Abriu, já instala: uma barra e o Noir abre sozinho. |
-| **Câmera em bolinha** | Tela e câmera da mesma pessoa num cartaz só. |
-| **Mais resistente** | Testado na marra (sala lotada, imagens gigantes, mensagens quebradas) e não caiu. |
-| **Ajustes** | Os nomes das abas voltaram a aparecer; ícones só no traço. |
-| **Holofote** | Cor do fundo mais leve. |
-| **Ícone de verdade** | Cada janela aparece com o ícone do próprio app. |
-| **Tela não encontrada** | Acabou o erro em PCs com mais de um monitor. |
-| **Pode sair de perto** | Transmitindo, o computador não dorme e a tela não apaga. |
-| **Mais fácil de ler** | Textos com mais contraste e nada de "ao vivo" antes da hora. |
-| **Sala vazia** | Um botão grande pra copiar o código e chamar os amigos. |
-| **Aba Geral** | Idioma Português ou English, perfil abrindo suave. |
-| **Animações** | Mais calmas, e a opção Menos movimento. |
+| **Sala privada** | Quem chega bate na porta, e você deixa entrar ou recusa. |
+| **Código fixo** | Sua sala volta sempre com o mesmo código. |
+| **Sua música pra quem assiste** | Opcional, em Ajustes › Ilha: quem te assiste vê o que você ouve e abre no Spotify. |
+| **Telas mais calmas** | Transmitir, Assistir, a sala, sua transmissão e os Ajustes com menos botões à vista. |
+| **Início contido** | Duas portas, o código numa linha e os amigos em lista. |
+| **Chat na ilha** | As mensagens aparecem na ilha do topo; o painel do chat começa fechado. |
+| **Fumaça de verdade** | O mascote sobe do café e se desfaz pelas bordas. |
 
 </div>
 
