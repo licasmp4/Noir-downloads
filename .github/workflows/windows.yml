@@ -1,0 +1,119 @@
+name: Noir Windows
+
+# Monta o Noir pra Windows a partir do código (repo privado), só quando o licas manda.
+# Repo público: os registros são visíveis, então a compilação mostra só o resumo dos erros.
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: "Commit do código"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: noir-windows
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      FFMPEG_ZIP: ffmpeg-n8.1.3-35-gf1acb0a266-win64-lgpl-shared-8.1
+      FFMPEG_SHA256: bb6eedd1978549c84e8dff7b72c885df090db6a6ee1de44e76c8855babea495c
+      CARGO_TERM_COLOR: never
+      RUSTFLAGS: -Awarnings
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: licasmp4/Noir-compartilhar-tela
+          ref: ${{ inputs.commit }}
+          ssh-key: ${{ secrets.NOIR_CODIGO_SSH }}
+          persist-credentials: false
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: FFmpeg
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download ffmpeg-8.1.3 -R ${{ github.repository }} -p "$env:FFMPEG_ZIP.zip" -O ffmpeg.zip
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          if ((Get-FileHash ffmpeg.zip -Algorithm SHA256).Hash -ne $env:FFMPEG_SHA256) { throw "FFmpeg diferente do esperado" }
+          Expand-Archive ffmpeg.zip -DestinationPath .
+          Rename-Item $env:FFMPEG_ZIP ffmpeg
+          "FFMPEG_DIR=$pwd\ffmpeg" >> $env:GITHUB_ENV
+          "LIBCLANG_PATH=C:\Program Files\LLVM\bin" >> $env:GITHUB_ENV
+
+      - name: Compilar
+        run: cargo build -q --release -p telao-win --message-format=short
+
+      - name: Empacotar
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory Noir | Out-Null
+          Copy-Item target\release\Noir.exe Noir\
+          foreach ($dll in "avcodec-62", "avformat-62", "avutil-60", "swresample-6", "swscale-9") { Copy-Item "ffmpeg\bin\$dll.dll" Noir\ }
+          Copy-Item ffmpeg\LICENSE.txt Noir\FFmpeg-LICENSE.txt
+          Copy-Item windows\assets\OFL-*.txt Noir\
+          Copy-Item windows\assets\Phosphor-LICENSE.txt Noir\
+          Compress-Archive Noir\* Noir-Windows.zip
+          "noir-build: $(git log -1 --format=%ct)" | Out-File noir-build.txt
+
+      - name: Instalador
+        shell: pwsh
+        run: |
+          cargo run -q --release -p telao-setup --features empacotar --bin empacotar --message-format=short -- Noir pacote.bin
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $env:NOIR_PACOTE = "$pwd\pacote.bin"
+          cargo build -q --release -p telao-setup --bin Noir-Setup --message-format=short
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Copy-Item target\release\Noir-Setup.exe Noir-Setup.exe
+          Compress-Archive Noir-Setup.exe Noir-Instalador-Windows.zip
+          "{0:N0} MB" -f ((Get-Item Noir-Setup.exe).Length / 1MB)
+
+      - name: Testar o instalador
+        shell: pwsh
+        run: |
+          $pasta = "$env:LOCALAPPDATA\Programs\Noir"
+          $chave = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{7E0B3C52-5C1A-4F7E-9A44-2D1E6B8F4A10}_is1"
+          $log = "$env:TEMP\noir-instalador.txt"
+          # duas vezes: a segunda é igual a uma atualização pelo botão do app
+          foreach ($vez in 1..2) {
+            $p = Start-Process ".\Noir-Setup.exe" -ArgumentList "/VERYSILENT","/SUPPRESSMSGBOXES","/NORESTART" -Wait -PassThru
+            if ($p.ExitCode -ne 0) { Get-Content $log -ErrorAction SilentlyContinue; throw "instalador saiu com $($p.ExitCode) (vez $vez)" }
+          }
+          if (-not (Test-Path "$pasta\Noir.exe")) { throw "não instalou em $pasta" }
+          if (-not (Test-Path "$pasta\avcodec-*.dll")) { throw "faltou o FFmpeg" }
+          if (-not (Test-Path "$pasta\Desinstalar Noir.exe")) { throw "sem o desinstalador" }
+          if (-not (Test-Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Noir.lnk")) { throw "sem atalho no menu Iniciar" }
+          if ((Get-ItemProperty $chave).DisplayName -ne "Noir") { throw "não apareceu em Aplicativos" }
+          if ((Get-FileHash "$pasta\Noir.exe").Hash -ne (Get-FileHash "Noir\Noir.exe").Hash) { throw "Noir.exe instalado diferente do compilado" }
+          # abre de verdade: se faltar alguma DLL o Windows derruba na hora (0xC0000135 / 0xC000007B)
+          $app = Start-Process "$pasta\Noir.exe" -PassThru
+          Start-Sleep 8
+          # erro do Windows (DLL faltando/bloqueada) vem como 0xC... = número negativo; o runner não tem OpenGL,
+          # então o Noir sai com 1 depois de carregar as DLLs e rodar o codec::init, e isso conta como "abriu"
+          if ($app.HasExited) { "Noir.exe saiu com 0x{0:X8}" -f $app.ExitCode }
+          if ($app.HasExited -and $app.ExitCode -lt 0) { throw ("Noir.exe não abriu: 0x{0:X8}" -f $app.ExitCode) }
+          if (-not $app.HasExited) { Stop-Process -Id $app.Id -Force; Start-Sleep 2 }
+          Start-Process "$pasta\Desinstalar Noir.exe" -ArgumentList "--desinstalar","/VERYSILENT" -Wait
+          Start-Sleep 10
+          if (Test-Path "$pasta\Noir.exe") { throw "não desinstalou" }
+          if (Test-Path "$pasta") { throw "a pasta ficou pra trás" }
+          if (Test-Path $chave) { throw "continuou em Aplicativos" }
+          if (Test-Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Noir.lnk") { throw "o atalho ficou" }
+          Get-Content $log
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noir-windows
+          retention-days: 3
+          path: |
+            Noir-Setup.exe
+            Noir-Instalador-Windows.zip
+            noir-build.txt
