@@ -107,6 +107,7 @@
 
 | | |
 |:---|:---|
+| **Placa sem bagunça** | No Jogar aqui, resolução e quadros num menu só; Menor atraso num interruptor. |
 | **Ilha mais leve** | Aberta, roda lisa mesmo com coisa mexendo atrás do vidro. |
 | **Amigos veem a ilha** | Ela aparece na transmissão, nos prints e nas gravações. |
 | **Voo com a música** | Começou a transmitir com música, a ilha sobe com a capa e a onda numa mola só. |
