@@ -107,6 +107,8 @@
 
 | | |
 |:---|:---|
+| **Placa nítida em tela cheia** | No Mac, a sua própria transmissão da placa vem inteira, sem pixelado. |
+| **Ilha volta com mola** | Parou de transmitir: desce do topo com um quique e entra no Noir sem piscar. |
 | **Placa sem bagunça** | No Jogar aqui, resolução e quadros num menu só; Menor atraso num interruptor. |
 | **Ilha mais leve** | Aberta, roda lisa mesmo com coisa mexendo atrás do vidro. |
 | **Amigos veem a ilha** | Ela aparece na transmissão, nos prints e nas gravações. |
