@@ -89,7 +89,7 @@
   <img src="docs/img/ilha.webp" width="100%" alt="A ilha avisando que um amigo começou a transmitir e depois abrindo com a música tocando e os controles.">
 </p>
 
-<p align="center"><sub>A ilha mostra a música e os avisos da sala com a foto do amigo, e o botão do fone troca a saída de som. Transmitindo, ela fica por cima do jogo, troca de mesa com você e não aparece pros amigos. Se você quiser, quem te assiste vê o que você está ouvindo.</sub></p>
+<p align="center"><sub>A ilha mostra a música e os avisos da sala com a foto do amigo, e o botão do fone troca a saída de som. Transmitindo, ela fica por cima do jogo, troca de mesa com você e aparece pros amigos junto com a tela. Se você quiser, quem te assiste vê o que você está ouvindo.</sub></p>
 
 <br>
 
@@ -107,6 +107,10 @@
 
 | | |
 |:---|:---|
+| **Ilha mais leve** | Aberta, roda lisa mesmo com coisa mexendo atrás do vidro. |
+| **Amigos veem a ilha** | Ela aparece na transmissão, nos prints e nas gravações. |
+| **Voo com a música** | Começou a transmitir com música, a ilha sobe com a capa e a onda numa mola só. |
+| **Botões que respondem** | Com o mouse em cima, os botões acendem de verdade. |
 | **Status com um clique** | Disponível, Jogando, Ausente ou Não perturbe. Os amigos veem na hora, e no Não perturbe a ilha fica quieta. |
 | **Chat com as fotos** | Assistindo um amigo, as mensagens aparecem em vidro com a foto de quem mandou. |
 | **Avisos com foto** | Quem entrou, saiu ou começou a transmitir chega na ilha com a foto do amigo. |
