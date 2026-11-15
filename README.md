@@ -107,6 +107,7 @@
 
 | | |
 |:---|:---|
+| **Chamada** | A câmera de todo mundo lado a lado, como numa chamada de vídeo. |
 | **Windows com a cara do Mac** | Mesmos botões, cantos e vidro; animações mais lisas; câmera que abre em mais PCs. |
 | **Placa nítida em tela cheia** | No Mac, a sua própria transmissão da placa vem inteira, sem pixelado. |
 | **Ilha volta com mola** | Parou de transmitir: desce do topo com um quique e entra no Noir sem piscar. |
