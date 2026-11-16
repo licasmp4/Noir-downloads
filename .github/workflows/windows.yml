@@ -52,6 +52,9 @@ jobs:
       - name: Compilar
         run: cargo build -q --release -p telao-win --message-format=short
 
+      - name: Conferir funções do Windows
+        run: python windows/ci/funcoes_windows.py target\release\Noir.exe
+
       # Sala de verdade na máquina do Windows (3 pessoas de mentira): teste de internet até a sala,
       # imagem na hora pra quem entra e versão leve por amigo. Duas vezes: internet normal e simulada
       # em 8 Mbps (o teste tem que parar antes de encher). Repo público: só as linhas do resultado
