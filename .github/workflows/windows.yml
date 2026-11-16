@@ -108,6 +108,14 @@ jobs:
             $p = Start-Process ".\Noir-Setup.exe" -ArgumentList "/VERYSILENT","/SUPPRESSMSGBOXES","/NORESTART" -Wait -PassThru
             if ($p.ExitCode -ne 0) { Get-Content $log -ErrorAction SilentlyContinue; throw "instalador saiu com $($p.ExitCode) (vez $vez)" }
           }
+          # arquivo preso (como um Noir velho que não fechou ou o antivírus olhando, 16/11): o
+          # instalador tem que tirar o velho do caminho e instalar mesmo assim
+          $dll = Get-ChildItem "$pasta\avcodec-*.dll" | Select-Object -First 1
+          $preso = [System.IO.File]::Open($dll.FullName, 'Open', 'Read', 'Read, Delete')
+          $p = Start-Process ".\Noir-Setup.exe" -ArgumentList "/VERYSILENT","/SUPPRESSMSGBOXES","/NORESTART" -Wait -PassThru
+          $preso.Close()
+          if ($p.ExitCode -ne 0) { Get-Content $log -ErrorAction SilentlyContinue; throw "com arquivo preso, o instalador saiu com $($p.ExitCode)" }
+          "atualizou com arquivo preso: ok"
           if (-not (Test-Path "$pasta\Noir.exe")) { throw "não instalou em $pasta" }
           if (-not (Test-Path "$pasta\avcodec-*.dll")) { throw "faltou o FFmpeg" }
           if (-not (Test-Path "$pasta\Desinstalar Noir.exe")) { throw "sem o desinstalador" }
