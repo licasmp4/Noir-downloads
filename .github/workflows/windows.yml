@@ -52,6 +52,24 @@ jobs:
       - name: Compilar
         run: cargo build -q --release -p telao-win --message-format=short
 
+      # Sala de verdade na máquina do Windows (3 pessoas de mentira): teste de internet até a sala,
+      # imagem na hora pra quem entra e versão leve por amigo. Duas vezes: internet normal e simulada
+      # em 8 Mbps (o teste tem que parar antes de encher). Repo público: só as linhas do resultado
+      - name: Testar a sala
+        shell: pwsh
+        timeout-minutes: 10
+        run: |
+          cargo build -q --release -p telao-net --example call_low --message-format=short
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          foreach ($rede in "normal", "8") {
+            if ($rede -eq "8") { $env:TELAO_SIM_RATE = "8"; $env:TELAO_SIM_DELAY_MS = "20" }
+            "== internet $rede"
+            $saida = & target\release\examples\call_low.exe 2>&1
+            $codigo = $LASTEXITCODE
+            $saida | Select-String -Pattern "→" | ForEach-Object { $_.Line }
+            if ($codigo -ne 0) { throw "teste da sala falhou (internet $rede)" }
+          }
+
       - name: Empacotar
         shell: pwsh
         run: |
