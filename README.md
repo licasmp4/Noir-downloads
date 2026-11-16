@@ -107,6 +107,7 @@
 
 | | |
 |:---|:---|
+| **Prévias das janelas** | Cada janela aberta com a imagem dela na hora de escolher, conexão à vista assistindo (sinal e de quem é o problema), relatório num clique e volta mais rápido quando a internet cai. |
 | **Assistir nova** | Telas dos amigos ao vivo na aba Assistir, modo inteligente que mede a internet, sua câmera no canto assistindo, internet fraca sem travar, cada amigo na sua qualidade e imagem na hora ao entrar. |
 | **Chamada** | A câmera de todo mundo lado a lado, como numa chamada de vídeo. |
 | **Windows com a cara do Mac** | Mesmos botões, cantos e vidro; animações mais lisas; câmera que abre em mais PCs. |
