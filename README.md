@@ -101,6 +101,18 @@
 
 <h2 align="center">O que mudou</h2>
 
+<p align="center"><b>16 de novembro de 2026</b></p>
+
+<div align="center">
+
+| | |
+|:---|:---|
+| **Chega de 540p** | A versão leve da tela fica só pra quem tem menos de uns 6 Mbps; com internet boa a live é 1080p. |
+| **Tela mais limpa** | O FPS e ping vêm desligados (liga no ··· ou com a tecla I). |
+| **Atualizar sem travar** | No Windows, o instalador espera o Noir antigo fechar e instala mesmo com arquivo preso. |
+
+</div>
+
 <p align="center"><b>14 de novembro de 2026</b></p>
 
 <div align="center">
