@@ -66,7 +66,7 @@ jobs:
             "== internet $rede"
             $saida = & target\release\examples\call_low.exe 2>&1
             $codigo = $LASTEXITCODE
-            $saida | Select-String -Pattern "→" | ForEach-Object { $_.Line }
+            $saida | Select-String -Pattern "→|teste até a sala:" | ForEach-Object { $_.Line }
             if ($codigo -ne 0) { throw "teste da sala falhou (internet $rede)" }
           }
 
