@@ -107,6 +107,9 @@
 
 | | |
 |:---|:---|
+| **Sala em destaque** | A tela mais assistida grande e as outras do lado, a imagem sem filtro e o nome numa etiqueta. |
+| **Imagem mais nítida** | Quem transmite do Windows segura o 1080p60 por mais tempo; o aviso não culpa mais o amigo quando a qualidade desceu de propósito. |
+| **Novidades fofas** | O bonequinho dá oi num balão e cada novidade vem numa cartinha. |
 | **Virar a câmera** | Câmera chegando invertida? Um botão no cartão da câmera vira a imagem pra você e pros amigos. |
 | **Páginas de verdade** | Novidades e Quem fez o Noir abrem como páginas do app. Clique no licas.mp3 do topo pra conhecer quem fez. |
 | **Barra mais limpa** | Assistindo, só o essencial à vista; janelinha, FPS e print ficam no botão ···. |
