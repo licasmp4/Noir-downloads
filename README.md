@@ -107,6 +107,10 @@
 
 | | |
 |:---|:---|
+| **Virar a câmera** | Câmera chegando invertida? Um botão no cartão da câmera vira a imagem pra você e pros amigos. |
+| **Páginas de verdade** | Novidades e Quem fez o Noir abrem como páginas do app. Clique no licas.mp3 do topo pra conhecer quem fez. |
+| **Barra mais limpa** | Assistindo, só o essencial à vista; janelinha, FPS e print ficam no botão ···. |
+| **Prévias mais lisas** | As prévias das janelas e telas pesam menos e andam mais soltas. |
 | **Cabe em janela pequena** | As fichas e a prévia encolhem pra caber, e o Começar não some atrás do dock. |
 | **Prévias das janelas** | Cada janela aberta com a imagem dela na hora de escolher, conexão à vista assistindo (sinal e de quem é o problema), relatório num clique e volta mais rápido quando a internet cai. |
 | **Assistir nova** | Telas dos amigos ao vivo na aba Assistir, modo inteligente que mede a internet, sua câmera no canto assistindo, internet fraca sem travar, cada amigo na sua qualidade e imagem na hora ao entrar. |
