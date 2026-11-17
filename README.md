@@ -107,6 +107,9 @@
 
 | | |
 |:---|:---|
+| **Sem zoom preso** | Voltar da Sala pra tela de um amigo não deixa mais a imagem num zoom enorme. |
+| **Atualização sozinha** | O Noir procura versão nova a cada 5 minutos e quando você volta pra janela dele. |
+| **Ilha na troca de música** | Opção nos Ajustes, em Música: a ilha abre uns segundos mostrando a música nova. |
 | **Som de volta** | Abrir a tela de um amigo pelo cartão da sala vem com som e na qualidade boa (antes ficava muda e em 540p). |
 | **Barra mais limpa** | O Picture in Picture fica à vista; saíram o Mais, o FPS e o print. |
 | **Status certo** | Disponível com bolinha verde, Jogando com um play, e anel vermelho na foto de quem está ao vivo. |
