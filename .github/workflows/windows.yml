@@ -120,6 +120,10 @@ jobs:
           if (-not (Test-Path "$pasta\avcodec-*.dll")) { throw "faltou o FFmpeg" }
           if (-not (Test-Path "$pasta\Desinstalar Noir.exe")) { throw "sem o desinstalador" }
           if (-not (Test-Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Noir.lnk")) { throw "sem atalho no menu Iniciar" }
+          # o link noir:// (botão Entrar na sala do Discord) abre o Noir
+          if (-not (Test-Path "HKCU:\Software\Classes\noir\shell\open\command")) { throw "sem o link noir://" }
+          $abre = (Get-ItemProperty "HKCU:\Software\Classes\noir\shell\open\command").'(default)'
+          if ($abre -notlike "*Noir.exe*") { throw "o link noir:// não abre o Noir: $abre" }
           if ((Get-ItemProperty $chave).DisplayName -ne "Noir") { throw "não apareceu em Aplicativos" }
           if ((Get-FileHash "$pasta\Noir.exe").Hash -ne (Get-FileHash "Noir\Noir.exe").Hash) { throw "Noir.exe instalado diferente do compilado" }
           # abre de verdade: se faltar alguma DLL o Windows derruba na hora (0xC0000135 / 0xC000007B)
@@ -136,6 +140,7 @@ jobs:
           if (Test-Path "$pasta") { throw "a pasta ficou pra trás" }
           if (Test-Path $chave) { throw "continuou em Aplicativos" }
           if (Test-Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Noir.lnk") { throw "o atalho ficou" }
+          if (Test-Path "HKCU:\Software\Classes\noir") { throw "o link noir:// ficou" }
           Get-Content $log
 
       - uses: actions/upload-artifact@v4
