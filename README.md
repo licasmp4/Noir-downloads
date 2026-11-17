@@ -107,8 +107,10 @@
 
 | | |
 |:---|:---|
+| **Som de volta** | Abrir a tela de um amigo pelo cartão da sala vem com som e na qualidade boa (antes ficava muda e em 540p). |
+| **Barra mais limpa** | O Picture in Picture fica à vista; saíram o Mais, o FPS e o print. |
+| **Status certo** | Disponível com bolinha verde, Jogando com um play, e anel vermelho na foto de quem está ao vivo. |
 | **Chega de 540p** | A versão leve da tela fica só pra quem tem menos de uns 6 Mbps; com internet boa a live é 1080p. |
-| **Tela mais limpa** | O FPS e ping vêm desligados (liga no ··· ou com a tecla I). |
 | **Atualizar sem travar** | No Windows, o instalador espera o Noir antigo fechar e instala mesmo com arquivo preso. |
 
 </div>
