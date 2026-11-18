@@ -93,6 +93,26 @@
 
 <br>
 
+<h2 align="center">Ouçam juntos.</h2>
+
+<p align="center">Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, no Noir. Eles não precisam de Spotify nem de conta paga.</p>
+
+<p align="center">
+  <img src="docs/img/musica.jpg" width="100%" alt="A aba Música: a capa do disco grande com o player de vidro, a fila do lado com quem pediu cada música e as fotos de quem está ouvindo no topo.">
+</p>
+
+<p align="center"><sub>A capa do que está tocando vira a foto da sala. A fila fica do lado, e qualquer um põe música. No topo aparecem as fotos de quem está ouvindo, com o dono primeiro.</sub></p>
+
+<br>
+
+<p align="center">
+  <img src="docs/img/musica-capa.jpg" width="100%" alt="A mesma sala com o player recolhido numa pílula embaixo da capa, deixando o disco limpo.">
+</p>
+
+<p align="center"><sub>O player de vidro recolhe numa pílula, e a capa fica limpa. Os amigos aparecem na lista Amigos: clique pra entrar, ou clique com o botão direito pra pedir pra entrar. Você escolhe quantas pessoas cabem, quem entra direto, a senha e um código fixo. No Discord aparece Ouvindo no Noir Music, com a capa e o botão Ouvir junto. Quem toca precisa de um Mac; quem ouve pode estar no Mac ou no Windows.</sub></p>
+
+<br>
+
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="docs/recursos-escuro.svg"><img src="docs/recursos-claro.svg" width="100%" alt="Até 4K a 120 fps. Tela e câmera de todo mundo ao mesmo tempo. Sem o Discord. Direto entre os PCs. Vários picture in picture. Entra só com o código."></picture>
 </p>
@@ -100,6 +120,23 @@
 <br>
 
 <h2 align="center">O que mudou</h2>
+
+<p align="center"><b>18 de novembro de 2026: Música</b></p>
+
+<div align="center">
+
+| | |
+|:---|:---|
+| **A aba Música** | Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, sem precisar de Spotify. Quem toca precisa de um Mac; quem ouve pode estar no Mac ou no Windows. |
+| **A sala com a capa** | A capa vira a foto da sala e o fundo pega as cores dela. A fila fica do lado, e o player de vidro recolhe numa pílula. |
+| **Amigos no Noir** | Quem já esteve numa sala com você vira amigo. Clique na lista Amigos pra entrar, ou clique com o botão direito pra pedir pra entrar. |
+| **As regras são suas** | Até quantas pessoas (até 10), quem entra direto, senha e um código fixo. |
+| **Ouvindo no Noir Music** | No Discord aparece a capa e o botão Ouvir junto, que abre o Noir já na sala. |
+| **A música na ilha** | Jogando, abra a ilha pra ver a letra, pular ou pausar. A letra na ilha fechada é opcional, em Ajustes › Ilha. |
+| **Letra, chat e barras** | Letra sincronizada na ilha, chat sem balões, perfil sem caixas, barras soltas, Transmitir e Ajustes mais limpos, e o Assistir só com o código. |
+| **Noir no Discord** | Status Assistindo Noir com o botão Entrar na sala, entrar com a conta do Discord e convite no canal. |
+
+</div>
 
 <p align="center"><b>16 de novembro de 2026</b></p>
 
