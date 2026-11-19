@@ -95,7 +95,7 @@
 
 <h2 align="center">Ouçam juntos.</h2>
 
-<p align="center">Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, no Noir. Eles não precisam de Spotify nem de conta paga.</p>
+<p align="center">Toque o seu Spotify e os amigos ouvem a mesma música, ao vivo, no Noir. Eles não precisam de Spotify nem de conta paga.</p>
 
 <p align="center">
   <img src="docs/img/musica.jpg" width="100%" alt="A aba Música: a capa do disco grande com o player de vidro, a fila do lado com quem pediu cada música e as fotos de quem está ouvindo no topo.">
@@ -121,13 +121,32 @@
 
 <h2 align="center">O que mudou</h2>
 
+<p align="center"><b>19 de novembro de 2026: dois Noirs num só</b></p>
+
+<div align="center">
+
+| | |
+|:---|:---|
+| **Transmitir ou ouvir música** | Ao abrir, o Noir pergunta o que você quer fazer e muda inteiro. O botão redondo na barra troca de um pro outro. |
+| **Do momento** | O que mais toca no Brasil, o que seus amigos estão ouvindo, o que você tocou há pouco e o que você mais ouve. |
+| **Feito pra você** | Descobertas da semana (artistas parecidos com os seus, troca toda segunda) e Radar de novidades (o que saiu nas últimas semanas), montados pelo próprio Noir. |
+| **Curtidas** | As suas músicas curtidas no Spotify numa aba só delas, com busca e Tocar tudo na ordem. |
+| **Busca pra todo mundo** | As músicas e as capas aparecem enquanto você digita. Quem só entra na sala também busca e pede música, sem conta. |
+| **Amigos** | Tela com lista, perfil com banner, conversa e as playlists de cada amigo no Spotify, prontas pra tocar na sua sala. |
+| **Revista** | Uma edição nova por dia, em português, com um artista na capa e perfis com o texto da Wikipédia. |
+| **Equalizador inteligente** | Ouve cada música por uns 10 segundos e ajusta o som pra ela. Quem toca também pode ouvir com o EQ, no Mac e no Windows. |
+| **Na hora e sem carregar** | Pausar, passar e pular aparecem na hora pra todo mundo, e as abas da Música abrem já prontas. |
+| **Só Spotify** | A Música e a ilha funcionam só com o Spotify. |
+
+</div>
+
 <p align="center"><b>18 de novembro de 2026: Música</b></p>
 
 <div align="center">
 
 | | |
 |:---|:---|
-| **A aba Música** | Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, sem precisar de Spotify. Quem toca e quem ouve podem estar no Mac ou no Windows. |
+| **A aba Música** | Toque o seu Spotify e os amigos ouvem a mesma música, ao vivo, sem precisar de Spotify. Quem toca e quem ouve podem estar no Mac ou no Windows. |
 | **A sala com a capa** | A capa vira a foto da sala e o fundo pega as cores dela. A fila fica do lado, e o player de vidro recolhe numa pílula. |
 | **Amigos no Noir** | Quem já esteve numa sala com você vira amigo. Clique na lista Amigos pra entrar, ou clique com o botão direito pra pedir pra entrar. |
 | **As regras são suas** | Até quantas pessoas (até 10), quem entra direto, senha e um código fixo. |
