@@ -109,7 +109,7 @@
   <img src="docs/img/musica-capa.jpg" width="100%" alt="A mesma sala com o player recolhido numa pílula embaixo da capa, deixando o disco limpo.">
 </p>
 
-<p align="center"><sub>O player de vidro recolhe numa pílula, e a capa fica limpa. Os amigos aparecem na lista Amigos: clique pra entrar, ou clique com o botão direito pra pedir pra entrar. Você escolhe quantas pessoas cabem, quem entra direto, a senha e um código fixo. No Discord aparece Ouvindo no Noir Music, com a capa e o botão Ouvir junto. Quem toca precisa de um Mac; quem ouve pode estar no Mac ou no Windows.</sub></p>
+<p align="center"><sub>A capa fica limpa, com a letra grande do lado. Os amigos aparecem na lista Amigos: clique pra entrar, ou clique com o botão direito pra pedir pra entrar. Você escolhe quantas pessoas cabem, quem entra direto, a senha e um código fixo. No Discord aparece Ouvindo no Noir Music, com a capa e o botão Ouvir junto. Quem toca e quem ouve podem estar no Mac ou no Windows.</sub></p>
 
 <br>
 
@@ -127,7 +127,7 @@
 
 | | |
 |:---|:---|
-| **A aba Música** | Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, sem precisar de Spotify. Quem toca precisa de um Mac; quem ouve pode estar no Mac ou no Windows. |
+| **A aba Música** | Toque o seu Spotify ou Apple Music e os amigos ouvem a mesma música, ao vivo, sem precisar de Spotify. Quem toca e quem ouve podem estar no Mac ou no Windows. |
 | **A sala com a capa** | A capa vira a foto da sala e o fundo pega as cores dela. A fila fica do lado, e o player de vidro recolhe numa pílula. |
 | **Amigos no Noir** | Quem já esteve numa sala com você vira amigo. Clique na lista Amigos pra entrar, ou clique com o botão direito pra pedir pra entrar. |
 | **As regras são suas** | Até quantas pessoas (até 10), quem entra direto, senha e um código fixo. |
